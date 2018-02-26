@@ -24,10 +24,11 @@ void UPositionReport::BeginPlay()
 
 	// ...
 	FString ObjectName = GetOwner()->GetName();
-	UE_LOG(LogTemp, Warning, TEXT("Position report reporting for %s!"), *ObjectName);
+	FVector ObjectPos = GetOwner()->GetActorLocation();
 	
+	UE_LOG(LogTemp, Warning, TEXT("%s is at pos of %s!"), *ObjectName, *ObjectPos.ToString());
+		
 }
-
 
 // Called every frame
 void UPositionReport::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
