@@ -5,8 +5,11 @@
 */DerivedDataCache
 */Intermediate
 */Saved
+*/.vs
+
 BuldingEscape/Content/StarterContent/
 
 
 # VS Generated Files
 *.VC.db
+
